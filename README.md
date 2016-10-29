@@ -58,8 +58,7 @@ gcloud beta ml jobs submit training ${JOB_NAME} \
 --package-path=train \
 --staging-bucket="${STAGING_BUCKET}" \
 --module-name=train.2-input \
--- \  # starting arguments for train.2-input
---input_dir="${INPUT_PATH}"
+-- --input_dir="${INPUT_PATH}"
 ```
 
 
@@ -92,6 +91,5 @@ gcloud beta ml jobs submit training ${JOB_NAME} \
 --package-path=train \
 --staging-bucket="${STAGING_BUCKET}" \
 --module-name=train.3-output \
--- \
---output_dir="${OUTPUT_PATH}"
+-- --output_dir="${OUTPUT_PATH}"
 ```

@@ -1,5 +1,10 @@
 # Google Cloud ML Examples
 
+## Slides and Videos
+* [Google Cloud ML Slides](/Google Cloud ML.pdf)
+* [Google Cloud ML Video](https://youtu.be/EIRD3HAp-QQ)
+* [Google Cloud ML Video (KOREAN)](https://youtu.be/8Jkz2HexDAM)
+
 ## Simple multiplication (train.1-multiply)
 
 ### Run locally:
@@ -93,3 +98,6 @@ gcloud beta ml jobs submit training ${JOB_NAME} \
 --module-name=train.3-output \
 -- --output_dir="${OUTPUT_PATH}"
 ```
+
+## Contributions/Comments
+We always welcome your contributions/comments. Use the [Issues](https://github.com/hunkim/GoogleClouldMLExamples/issues).

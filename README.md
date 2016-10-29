@@ -83,7 +83,7 @@ STAGING_BUCKET=gs://${PROJECT_ID}-ml
 OUTPUT_PATH=${STAGING_BUCKET}/output/
 ```
  
-Crete the output folder 
+Create the output folder
 (Copy an empty file to the GS path with trailing slash, `/`)
 ```bash
 gsutil cp /dev/null $OUTPUT_PATH

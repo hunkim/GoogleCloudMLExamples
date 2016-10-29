@@ -80,7 +80,7 @@ OUTPUT_PATH=${STAGING_BUCKET}/output/
 ```
  
 Crete the output folder 
-(Copy an empty file to the GS path with a trailing `/`)
+(Copy an empty file to the GS path with trailing slash, `/`)
 ```bash
 gsutil cp /dev/null $OUTPUT_PATH
 ```

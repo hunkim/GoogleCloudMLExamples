@@ -79,14 +79,14 @@ with file_io.FileIO(output_file, mode='w') as fout:
 
 
 ##### Note..
-`python -m module`  <-- Just because -m option runs on local machine didn't mean that it was able to run on cloud.
+ * `python -m module`  <-- Just because -m option runs on local machine didn't mean that it was able to run on cloud.
 
 
-For more info refer to tensorflow file_io.py: [https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/lib/io/file_io.py](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/lib/io/file_io.py) 
+ * For more info refer to tensorflow file_io.py: [https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/lib/io/file_io.py](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/lib/io/file_io.py) 
 
-Also, check this stackoverflow: [http://stackoverflow.com/questions/40396552/google-storage-gs-wrapper-file-input-out-for-cloud-ml](http://stackoverflow.com/questions/40396552/google-storage-gs-wrapper-file-input-out-for-cloud-ml). 
+ * Also, check this stackoverflow: [http://stackoverflow.com/questions/40396552/google-storage-gs-wrapper-file-input-out-for-cloud-ml](http://stackoverflow.com/questions/40396552/google-storage-gs-wrapper-file-input-out-for-cloud-ml). 
 
 
-Change `tf.initialize_all_variables()` to `tf.global_variables_initializer()`. The `initialize_all_variables` (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+ * Change `tf.initialize_all_variables()` to `tf.global_variables_initializer()`. The `initialize_all_variables` (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
 
         
